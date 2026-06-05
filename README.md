@@ -1,4 +1,4 @@
-> **VSD OpenLane Workshop** — WSL2 setup, OpenLane + Sky130A PDK installation, and picorv32a full RTL-to-GDSII flow with custom standard cell integration.
+> *OPENLANE 1.0.2* — WSL2 setup, OpenLane + Sky130A PDK installation, and picorv32a full RTL-to-GDSII flow with custom standard cell integration.
 
 ---
 
