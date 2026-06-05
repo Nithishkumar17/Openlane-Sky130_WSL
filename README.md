@@ -889,10 +889,3 @@ magic -T $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech &
 > **Platform:** WSL2 Ubuntu 22.04 on Windows 11
 """
 
-# Save to file
-output_path = "/mnt/agents/output/README.md"
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print(f"README.md saved successfully to: {output_path}")
-print(f"File size: {len(readme_content)} characters")
