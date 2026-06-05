@@ -880,12 +880,5 @@ magic -T $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech &
 - [FOSSi Dial-up Playlist](https://www.youtube.com/playlist?list=PLUgS-ZpL0yS3V3jP6iFGccg0PuyO28pDQ)
 
 ---
-
-> **Last Updated:** 2025-06-05  
-> **Total Days Logged:** 5  
-> **Workshop:** VSD OpenLane Workshop  
-> **OpenLane Version:** v1.0.2 (ff5509f)  
-> **PDK:** SkyWater 130A (sky130_fd_sc_hd)  
-> **Platform:** WSL2 Ubuntu 22.04 on Windows 11
 """
 
