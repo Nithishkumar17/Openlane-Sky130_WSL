@@ -1,6 +1,3 @@
-
-readme_content = """# OpenLane-Sky130_WSL
-
 > **VSD OpenLane Workshop** — WSL2 setup, OpenLane + Sky130A PDK installation, and picorv32a full RTL-to-GDSII flow with custom standard cell integration.
 
 ---
@@ -56,9 +53,6 @@ docker run hello-world
 # Expected output: Hello from Docker!
 ```
 
-> **Screenshot Placeholder:**  
-> ![Docker Hello World](assets/screenshots/setup/docker-hello-world.png)  
-> *Caption: Docker Desktop running successfully in WSL2*
 
 ---
 
@@ -79,10 +73,6 @@ This gives you two repos:
 ```
 
 > **Note:** `vsd-openlane` contains a hidden `.openlane-designs` folder — only visible with `ls -la`
-
-> **Screenshot Placeholder:**  
-> ![Directory Structure](assets/screenshots/setup/directory-structure.png)  
-> *Caption: OpenLane and vsd-openlane repositories cloned*
 
 ---
 
@@ -106,9 +96,6 @@ make test
 # [INFO]: There are no setup or hold violations in the design.
 ```
 
-> **Screenshot Placeholder:**  
-> ![OpenLane Test Pass](assets/screenshots/setup/openlane-test-pass.png)  
-> *Caption: OpenLane `make test` successful completion*
 
 ---
 
@@ -134,9 +121,7 @@ ls ~/openlane/OpenLane/designs/picorv32a
 # Expected: config.tcl  src/
 ```
 
-> **Screenshot Placeholder:**  
-> ![Design Copy](assets/screenshots/setup/picorv32a-design-copied.png)  
-> *Caption: picorv32a design files in OpenLane designs directory*
+
 
 ---
 
@@ -170,10 +155,6 @@ Run output is saved at:
 └── logs/               ← per-step logs
 ```
 
-> **Screenshot Placeholder:**  
-> ![Full Flow Success](assets/screenshots/setup/full-flow-success.png)  
-> *Caption: Full automated flow completion for picorv32a*
-
 ---
 
 ### Step 6 — View Layout in Magic
@@ -205,7 +186,7 @@ def read picorv32a.def
 Press **`V`** to zoom fit — the full routed picorv32a layout will be visible.
 
 > **Screenshot Placeholder:**  
-> ![Magic Layout View](assets/screenshots/setup/magic-layout-view.png)  
+> ![Magic Layout View](ASSETS/1.png)  
 > *Caption: Final routed picorv32a layout viewed in Magic*
 
 ---
@@ -324,16 +305,16 @@ run_synthesis
 ```
 
 **Screenshot Placeholders:**
-> ![OpenLane Flow Diagram](assets/screenshots/day1/openlane-flow-diagram.png)  
+> ![OpenLane Flow Diagram](ASSETS/2.png)  
 > *Caption: OpenLane RTL-to-GDSII flow diagram*
 
-> ![config.tcl Content](assets/screenshots/day1/config-tcl-content.png)  
+> ![config.tcl Content](ASSETS/3.png)  
 > *Caption: picorv32a config.tcl default parameters*
 
-> ![File Prepping](assets/screenshots/day1/file-preping.png)  
+> ![File Prepping](ASSETS/4.png)  
 > *Caption: LEF merging and design preparation in interactive mode*
 
-> ![Synthesis Success](assets/screenshots/day1/synthesis-successful.png)  
+> ![Synthesis Success](ASSETS/5.png)  
 > *Caption: Synthesis completion message*
 
 **Files checked:**
@@ -501,16 +482,11 @@ run_placement
 ```
 
 **Screenshot Placeholders:**
-> ![run_synthesis](assets/screenshots/day2/run-synthesis.png)  
-> *Caption: Synthesis re-run in Day 2 interactive session*
 
-> ![run_floorplan](assets/screenshots/day2/run-floorplan.png)  
-> *Caption: Floorplan execution in interactive mode*
-
-> ![Post-Floorplan Magic](assets/screenshots/day2/post-floorplan-magic.png)  
+> ![Post-Floorplan Magic](ASSETS/6.png)  
 > *Caption: Floorplan layout viewed in Magic — I/O ports, tap cells, decap cells visible*
 
-> ![Post-Placement Magic](assets/screenshots/day2/post-placement-magic.png)  
+> ![Post-Placement Magic](ASSETS/7.png)  
 > *Caption: Placement layout in Magic — standard cells placed in rows*
 
 **Magic commands for viewing:**
@@ -655,13 +631,13 @@ ext2spice
 ```
 
 **Screenshot Placeholders:**
-> ![Custom Cell Layout](assets/screenshots/day3/custom-cell-layout.png)  
+> ![Custom Cell Layout](ASSETS/8.png)  
 > *Caption: Custom inverter layout in Magic — PMOS (top), NMOS (bottom), power/ground rails*
 
-> ![EXT to SPICE Conversion](assets/screenshots/day3/ext-to-spice-conversion.png)  
+> ![EXT to SPICE Conversion](ASSETS/9.png)  
 > *Caption: Magic extract and ext2spice commands converting layout to SPICE netlist*
 
-> ![SPICE Simulation](assets/screenshots/day3/spice-simulation.png)  
+> ![SPICE Simulation](ASSETS/10.png)  
 > *Caption: SPICE simulation waveform showing input/output transitions and delay measurements*
 
 **Next step:** Convert inverter layout to LEF and add to picorv32a flow.
@@ -746,16 +722,13 @@ run_cts
 ```
 
 **Screenshot Placeholders:**
-> ![Custom Cell Inclusion](assets/screenshots/day4/custom-cell-inclusion.png)  
+> ![Custom Cell Inclusion](ASSETS/11.png)  
 > *Caption: Custom inverter cell included in merged LEF file*
 
-> ![New config.tcl](assets/screenshots/day4/new-config-tcl.png)  
-> *Caption: Updated config.tcl with custom LEF path and SYNTH_STRATEGY settings*
-
-> ![Slack Poor](assets/screenshots/day4/slack-poor.png)  
+> ![Slack Poor](ASSETS/12.png)  
 > *Caption: Timing report showing poor slack before optimization*
 
-> ![Better Slack](assets/screenshots/day4/better-slack.png)  
+> ![Better Slack](ASSETS/13.png)  
 > *Caption: Improved slack after setting SYNTH_STRATEGY to "DELAY 1"*
 
 **Key observations:**
