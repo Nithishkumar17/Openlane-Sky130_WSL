@@ -880,5 +880,4 @@ magic -T $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech &
 - [FOSSi Dial-up Playlist](https://www.youtube.com/playlist?list=PLUgS-ZpL0yS3V3jP6iFGccg0PuyO28pDQ)
 
 ---
-"""
 
