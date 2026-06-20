@@ -881,4 +881,4 @@ magic -T $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech &
 
 ---
 ##  Certificate
-> ![certificate](ASSETS/Nithish Kumar-certificate.jpg)  
+![certificate](ASSETS/Nithish Kumar-certificate.jpg)  
